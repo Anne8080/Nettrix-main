@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: rgb(255, 136, 0);
+    --yellow: rgb(255, 196, 0);
+    --black: rgb(61, 61, 61);
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.view{
+    background-color: var(--orange);
+    padding: 4px 0.5%;
+    color: white;
+    border: none;
+}
+
+.locate{
+
+    .header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url("https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_960_720.jpg");
+        padding: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+
+        .title{
+            color: white;
+            width: 38%;
+            text-align: center;
+
+            h1{
+                font-size: 2rem;
+
+                span{
+                    color: var(--yellow);
+                }
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+        
+    }
+
+    .body{
+        padding: 0 7%;
+        .search{
+            background-color: white;
+            width: 99%;
+            position: relative;
+            margin: auto;
+            margin-top: -3.5%;
+            padding: 2% 1%;
+            box-shadow: 0 0 5px rgb(87, 87, 87);
+            border-radius: 5px;
+
+            #search{
+                outline: none;
+                border: none;
+                background-color: whitesmoke;
+                margin-right: 1%;
+                padding: 1% 1%;
+                border-radius: 5px;
+                width: 18%;
+            }
+            .filter{
+                outline: none;
+                border: none;
+                background-color: whitesmoke;
+                margin-right: 1%;
+                padding: 1% 1%;
+                border-radius: 5px;
+                color: gray;
+                cursor: pointer;
+            }
+            
+        }
+
+        .centers{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0.5%;
+
+            .others{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main{
+                width: 50%;
+                background-color: gray;
+                height: 93.5vh;
+                border-radius: 10px;
+            }
+        }
+    }
+}

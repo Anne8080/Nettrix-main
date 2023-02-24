@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: rgb(255, 136, 0);
+    --yellow: rgb(255, 196, 0);
+    --black: rgb(61, 61, 61);
+}
+
+.card{
+    background: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(173, 173, 173);
+    margin: 6% 3%;
+
+    .info{
+        padding: 5%;
+    }
+
+    .img{
+        height: 150px;
+        width: 100%;
+        background-color: rgba(224, 72, 11, 0.815);
+        border-radius: 15px;
+    }
+
+    .title{
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            color: gray;
+            font-size: 1.1rem;
+        }
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .locatebtn{
+            color: black;
+            font-size: 1rem;
+        }
+
+        .view{
+            padding: 2% 4%;
+        }
+    }
+}
