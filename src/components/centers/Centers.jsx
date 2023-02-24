@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../components/centers/centers.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 const Centers = ({type}) => {
     let data;
@@ -50,7 +52,7 @@ const Centers = ({type}) => {
                 <p>{data.p}</p>
             </div><br />
             <div className="links">
-                <a href='' className="locatebtn">Locate</a>
+                <a href='' className="locatebtn"><FontAwesomeIcon icon={faLocationDot} /> Locate</a>
                 <a href='' className="view">View</a>
             </div>
         </div>

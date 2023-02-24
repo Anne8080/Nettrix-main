@@ -3,6 +3,8 @@ import '../../pages/locations/locations.scss'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Centers from '../../components/centers/Centers'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilter, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const Locations = () => {
   return (
@@ -17,8 +19,10 @@ const Locations = () => {
         </div>
         <div className="body">
           <div className="search">
-            <input type="search" name="search" id="search" placeholder='Search for SPCF Centers' />
-            <button className='filter'>Filter</button>
+            <div className="searchteam">
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="glass" /><input type="search" name="search" id="search" placeholder='Search for SPCF Centers' />
+            </div>
+            <button className='filter'><FontAwesomeIcon icon={faFilter} />  Filter</button>
           </div><br /><br />
           <div className="centers">
             <div className="others">
